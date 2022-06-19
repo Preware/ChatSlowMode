@@ -1,0 +1,16 @@
+name: ChatSlowMode
+version: '${project.version}'
+main: com.preware.chatslowmode.Main
+api-version: 1.19
+description: Enables the use of slow mode in chat
+commands:
+  slowmode:
+    description: Slows down the chat
+    permission: chatslowmode.setdelay
+permissions:
+  chatslowmode.setdelay:
+    description: Allows the user to set the delay.
+    default: op
+  chatslowmode.bypass.slowmode:
+    default: op
+    description: Bypass slowmode with this permission!
