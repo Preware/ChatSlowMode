@@ -43,7 +43,11 @@ public class SlowChatEvent implements Listener {
 
                     int differenceInSeconds = (int) (difference / 1000);
 
-                    player.sendMessage(main.color("&e&lYou may speak in " + differenceInSeconds));
+                    if (main.color(main.getMessages().getString("messages.spamTimer")).contains("%time_remaining%")) {
+                        player.sendMessage(main.color(main.getMessages().getString("messages.spamTimer")).replace("%time_remaining%", String.valueOf(differenceInSeconds)));
+                    } else {
+                        player.sendMessage(main.color(main.getMessages().getString("messages.spamTimer")));
+                    }
 
                     if (differenceInSeconds == 0) {
                         delayTime.remove(player.getUniqueId());
