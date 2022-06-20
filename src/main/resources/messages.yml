@@ -1,0 +1,6 @@
+messages:
+  announcements:
+    delayOn: "&4&lServer management has turned on slow mode (%delay% seconds)"
+    delayOff: "&4&lServer management has turned off slow mode"
+  commands:
+    commandsDenied: "&4&lYou do not have permission for this command!"

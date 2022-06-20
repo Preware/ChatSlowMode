@@ -14,3 +14,12 @@ permissions:
   chatslowmode.bypass.slowmode:
     default: op
     description: Bypass slowmode with this permission!
+  chatslowmode.on:
+    description: Ability to turn on slowmode!
+    default: op
+  chatslowmode.off:
+    description: Ability to turn off slowmode!
+    default: op
+  chatslowmode.reload:
+    description: Ability to reload messages.yml!
+    default: op
